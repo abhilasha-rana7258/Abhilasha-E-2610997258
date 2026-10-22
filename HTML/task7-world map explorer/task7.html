@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>World Map Explorer</title>
+</head>
+<body>
+
+    <h1>World Map Explorer</h1>
+    <p>Explore the world by clicking on different regions on the map below!</p>
+
+    <!-- World Map Image with Image Map Mapping -->
+    <img src="world-map.jpg" alt="World Map" usemap="#worldmap">
+
+    <map name="worldmap">
+        <!-- Circle shape for a circular region (e.g., representing a specific island or country area) -->
+        <area shape="circle" coords="200,150,45" href="https://www.en.wikipedia.org/wiki/Japan" alt="Japan Region" target="_blank">
+
+        <!-- Rectangular shape for a rectangular region -->
+        <area shape="rect" coords="100,200,180,280" href="https://www.en.wikipedia.org/wiki/Australia" alt="Australia Region" target="_blank">
+
+        <!-- Polygon shape for an irregular or complex region -->
+        <area shape="poly" coords="350,120,400,100,430,150,370,170" href="https://www.en.wikipedia.org/wiki/Brazil" alt="Brazil Region" target="_blank">
+
+        <!-- Default area to catch any clicks outside the defined shapes -->
+        <area shape="default" href="https://www.en.wikipedia.org/wiki/Earth" alt="Default Earth Info" target="_blank">
+    </map>
+
+</body>
+</html>
